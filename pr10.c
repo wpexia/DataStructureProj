@@ -10,24 +10,24 @@ long num;
 int da[2000000];
 int dd[2000000];
 void myhead(){
-	printf("**     æ’åºç®—æ³•æ¯”è¾ƒ      **\n");
+	printf("**     ÅÅĞòËã·¨±È½Ï      **\n");
 	printf("===========================\n");
-	printf("**     1 ---å†’æ³¡æ’åº     **\n");
-	printf("**     2 ---é€‰æ‹©æ’åº     **\n");
-	printf("**     3 ---ç›´æ¥æ’å…¥æ’åº **\n");
-	printf("**     4 ---å¸Œå°”æ’åº     **\n");
-	printf("**     5 ---å¿«é€Ÿæ’åº     **\n");
-	printf("**     6 ---å †æ’åº       **\n");
-	printf("**     7 ---å½’å¹¶æ’åº     **\n");
-	printf("**     8 ---åŸºæ•°æ’åº     **\n");
-	printf("**     9 ---é€€å‡ºç¨‹åº     **\n");
+	printf("**     1 ---Ã°ÅİÅÅĞò     **\n");
+	printf("**     2 ---Ñ¡ÔñÅÅĞò     **\n");
+	printf("**     3 ---Ö±½Ó²åÈëÅÅĞò **\n");
+	printf("**     4 ---Ï£¶ûÅÅĞò     **\n");
+	printf("**     5 ---¿ìËÙÅÅĞò     **\n");
+	printf("**     6 ---¶ÑÅÅĞò       **\n");
+	printf("**     7 ---¹é²¢ÅÅĞò     **\n");
+	printf("**     8 ---»ùÊıÅÅĞò     **\n");
+	printf("**     9 ---ÍË³ö³ÌĞò     **\n");
 	printf("===========================\n");
 	printf("\n");
 }
 
 void myrand(){
 	int i;
-	srand((unsigned)time(NULL)); /*éšæœºç§å­*/
+	srand((unsigned)time(NULL)); /*Ëæ»úÖÖ×Ó*/
 	for(i = 0; i < n; i ++) dd[ i ] = rand();
 }
 
@@ -54,8 +54,8 @@ void mymaopao(){
 		}
 	clock_t t2 = clock();
 	long sec = (t2-t1) / CLOCKS_PER_SEC;
-	printf("å†’æ³¡æ’åºæ‰€ç”¨æ—¶é—´ï¼š        %ldç§’\n",sec);
-	printf("å†’æ³¡æ’åºæ‰€ç”¨äº¤æ¢æ¬¡æ•°ï¼š    %ld\n",num);
+	printf("Ã°ÅİÅÅĞòËùÓÃÊ±¼ä£º        %ldÃë\n",sec);
+	printf("Ã°ÅİÅÅĞòËùÓÃ½»»»´ÎÊı£º    %ld\n",num);
 }
 
 void myxuanzhe(){
@@ -70,8 +70,8 @@ void myxuanzhe(){
 	}
 	clock_t t2 = clock();
 	long sec = (t2-t1) / CLOCKS_PER_SEC;
-	printf("é€‰æ‹©æ’åºæ‰€ç”¨æ—¶é—´ï¼š        %ldç§’\n",sec);
-	printf("é€‰æ‹©æ’åºæ‰€ç”¨äº¤æ¢æ¬¡æ•°ï¼š    %ld\n",num);
+	printf("Ñ¡ÔñÅÅĞòËùÓÃÊ±¼ä£º        %ldÃë\n",sec);
+	printf("Ñ¡ÔñÅÅĞòËùÓÃ½»»»´ÎÊı£º    %ld\n",num);
 }
 
 void mycharu(){
@@ -88,8 +88,8 @@ void mycharu(){
 	}	
 	clock_t t2 = clock();
 	long sec = (t2-t1) / CLOCKS_PER_SEC;
-	printf("æ’å…¥æ’åºæ‰€ç”¨æ—¶é—´ï¼š        %ldç§’\n",sec);
-	printf("æ’å…¥æ’åºæ‰€ç”¨äº¤æ¢æ¬¡æ•°ï¼š    %ld\n",num);
+	printf("²åÈëÅÅĞòËùÓÃÊ±¼ä£º        %ldÃë\n",sec);
+	printf("²åÈëÅÅĞòËùÓÃ½»»»´ÎÊı£º    %ld\n",num);
 }
 
 void myxier(){
@@ -113,8 +113,8 @@ void myxier(){
 	}
 	clock_t t2 = clock();
 	long sec = (t2-t1) / CLOCKS_PER_SEC;
-	printf("å¸Œå°”æ’åºæ‰€ç”¨æ—¶é—´ï¼š        %ldç§’\n",sec);
-	printf("å¸Œå°”æ’åºæ‰€ç”¨äº¤æ¢æ¬¡æ•°ï¼š    %ld\n",num);
+	printf("Ï£¶ûÅÅĞòËùÓÃÊ±¼ä£º        %ldÃë\n",sec);
+	printf("Ï£¶ûÅÅĞòËùÓÃ½»»»´ÎÊı£º    %ld\n",num);
 }
 
 void myqsort(int l,int r) {
@@ -124,14 +124,14 @@ void myqsort(int l,int r) {
 		j = r;
 		x = da[i];
 		while (i < j){
-			while(i < j && da[j] > x) j--; /* ä»å³å‘å·¦æ‰¾ç¬¬ä¸€ä¸ªå°äºxçš„æ•° */
+			while(i < j && da[j] > x) j--;
 			if(i < j) da[i++] = da[j];
-			while(i < j && da[i] < x) i++; /* ä»å·¦å‘å³æ‰¾ç¬¬ä¸€ä¸ªå¤§äºxçš„æ•° */
+			while(i < j && da[i] < x) i++;
 			if(i < j) da[j--] = da[i];
 		}
 		da[i] = x;
 		num++;
-		myqsort(l, i-1); /* é€’å½’è°ƒç”¨ */
+		myqsort(l, i-1);
 		myqsort(i+1, r);
 	}
 }
@@ -140,8 +140,8 @@ void mykuaisu(){
 	myqsort(0,n);	
 	clock_t t2 = clock();
 	long sec = (t2-t1) / CLOCKS_PER_SEC;
-	printf("å¸Œå°”æ’åºæ‰€ç”¨æ—¶é—´ï¼š        %ldç§’\n",sec);
-	printf("å¸Œå°”æ’åºæ‰€ç”¨äº¤æ¢æ¬¡æ•°ï¼š    %ld\n",num);
+	printf("Ï£¶ûÅÅĞòËùÓÃÊ±¼ä£º        %ldÃë\n",sec);
+	printf("Ï£¶ûÅÅĞòËùÓÃ½»»»´ÎÊı£º    %ld\n",num);
 }
 void HeapAdjust(int i, int nLength){
 	int nChild, nTemp;
@@ -170,8 +170,8 @@ void mydui(){
 	}
 	clock_t t2 = clock();
 	long sec = (t2-t1) / CLOCKS_PER_SEC;
-	printf("å †æ’åºæ‰€ç”¨æ—¶é—´ï¼š        %ldç§’\n",sec);
-	printf("å †æ’åºæ‰€ç”¨äº¤æ¢æ¬¡æ•°ï¼š    %ld\n",num);
+	printf("¶ÑÅÅĞòËùÓÃÊ±¼ä£º        %ldÃë\n",sec);
+	printf("¶ÑÅÅĞòËùÓÃ½»»»´ÎÊı£º    %ld\n",num);
 }
 void Merge(int left, int m, int right){
 	int aux[200000] = {0};
@@ -213,8 +213,8 @@ void myguibing(){
 	MergeSort(0,n-1);
 	clock_t t2 = clock();
 	long sec = (t2-t1) / CLOCKS_PER_SEC;
-	printf("å½’å¹¶æ’åºæ‰€ç”¨æ—¶é—´ï¼š        %ldç§’\n",sec);
-	printf("å½’å¹¶æ’åºæ‰€ç”¨äº¤æ¢æ¬¡æ•°ï¼š    %ld\n",num);
+	printf("¹é²¢ÅÅĞòËùÓÃÊ±¼ä£º        %ldÃë\n",sec);
+	printf("¹é²¢ÅÅĞòËùÓÃ½»»»´ÎÊı£º    %ld\n",num);
 }
 int getDValue(int value, int d) {
 	for (;d > 0 && value > 0; d--) {
@@ -231,8 +231,8 @@ void myjishu(){
 	}
 	clock_t t2 = clock();
 	long sec = (t2-t1) / CLOCKS_PER_SEC;
-	printf("åŸºæ•°æ’åºæ‰€ç”¨æ—¶é—´ï¼š        %ldç§’\n",sec);
-	printf("åŸºæ•°æ’åºæ‰€ç”¨äº¤æ¢æ¬¡æ•°ï¼š    %ld\n",num);
+	printf("»ùÊıÅÅĞòËùÓÃÊ±¼ä£º        %ldÃë\n",sec);
+	printf("»ùÊıÅÅĞòËùÓÃ½»»»´ÎÊı£º    %ld\n",num);
 }
 
 void innerCountingSort(int d) {
@@ -266,7 +266,7 @@ void innerCountingSort(int d) {
 int main()
 {
 	myhead();
-	printf("è¯·è¾“å…¥è¦äº§ç”Ÿçš„éšæœºæ•°çš„ä¸ªæ•°ï¼ˆä¸è¶…è¿‡10000ï¼‰ï¼š");
+	printf("ÇëÊäÈëÒª²úÉúµÄËæ»úÊıµÄ¸öÊı£¨²»³¬¹ı10000£©£º");
 	scanf("%d",&n);
 	myrand(n);
 	printf("\n");
@@ -274,7 +274,7 @@ int main()
 	while (flag){	
 		myinit();	
 		printf("\n");	
-		printf("è¯·é€‰æ‹©æ’åºç®—æ³•ï¼š");
+		printf("ÇëÑ¡ÔñÅÅĞòËã·¨£º");
 		int ch;
 		scanf("%d", &ch);
 		switch(ch){
